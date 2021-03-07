@@ -1,0 +1,21 @@
+{
+  "name": "厦大 course 文件上传助手",
+  "description": "将 course.xmu.edu.cn 提交作业页面中基于 Flash 上传文件方案，替换为基于 fetch() 的上传方案。",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+      "webRequest",
+      "activeTab"
+  ],
+  "host_permissions": [
+      "*://course.xmu.edu.cn/*"
+  ],
+  "content_scripts": [
+        {
+            "matches": ["*://course.xmu.edu.cn/meol/common/hw/student/write.jsp*"],
+            "js": ["upload.js"],
+            "css": ["upload.css"],
+            "run_at": "document_idle"
+        }
+    ]
+}
