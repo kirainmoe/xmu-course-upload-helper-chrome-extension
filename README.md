@@ -2,6 +2,14 @@
 
 用于在不使用 Flash 的情况下，上传文件到 course.xmu.edu.cn 的 Chrome 拓展。
 
+- [厦大 course 文件上传助手](#厦大-course-文件上传助手)
+  - [这是什么？](#这是什么)
+  - [使用方法](#使用方法)
+    - [在 Google Chrome 上使用](#在-google-chrome-上使用)
+    - [在 Microsoft Edge 上使用](#在-microsoft-edge-上使用)
+  - [原理](#原理)
+  - [兼容性](#兼容性)
+
 ## 这是什么？
 
 众所周知在 2021 年之后，Chrome/Firefox/Edge 都停止了对 Flash 的支持，而你厦这个老旧的 course 平台上传个文件还得用 Flash. 这就造成了以上浏览器的用户今年没法正常提交作业了。而学校给出的解决方案是：
@@ -24,24 +32,55 @@
 
 ## 使用方法
 
-因为我并不想交 5 刀的注册费，因此没有提交到网上应用店。如果想使用它，你需要：
+因为我没办法交 5 刀的注册费，因此没有提交到网上应用商店。因此需要手动加载此插件：
+
+### 在 Google Chrome 上使用
 
 - 首先，[下载](https://github.com/kirainmoe/xmu-course-upload-helper-chrome-extension/archive/main.zip)并解压这个 Repo
-  - 你会得到一个名为 xmu-course-upload-helper-chrome-extension-master 的文件夹
+  - 你会得到一个名为 xmu-course-upload-helper-chrome-extension-main 的文件夹
+
+![image.png](https://i.loli.net/2021/03/08/WfaNovxlEt95pMQ.png)
+
 - 打开 Chrome，地址栏中输入 `chrome://extensions` 并回车
+
+![image.png](https://i.loli.net/2021/03/08/OgAY3lZ2zNKusCq.png)
+
 - 打开右上角的 “开发者模式”
 - 点击 “加载已解压的拓展程序”
+
+![image.png](https://i.loli.net/2021/03/08/ljSrMQnAU3m8oF9.png)
+
 - 打开解压好的文件夹
+
+![image.png](https://i.loli.net/2021/03/08/oS1IfQ2MHJzjkhd.png)
+
 - 启用插件
 
-大功告成了。从今以后，你在 course 上交作业就不必再劳烦已经入土的 Flash 了。
+![image.png](https://i.loli.net/2021/03/08/RqJBemsLPOzVECu.png)
 
+- 大功告成了。从今以后，你在 course 上交作业就不必再劳烦已经入土的 Flash 了。
+
+### 在 Microsoft Edge 上使用
+
+- 首先，[下载](https://github.com/kirainmoe/xmu-course-upload-helper-chrome-extension/archive/main.zip)并解压这个 Repo
+  - 你会得到一个名为 xmu-course-upload-helper-chrome-extension-main 的文件夹
+
+- 打开 Edge，在地址栏中输入 `edge://extensions` 并回车
+- 打开左下角的 “开发人员模式”
+- 点击右上角的 “加载已解压的拓展”
+
+![image.png](https://i.loli.net/2021/03/08/dwhgJPUAmNCox5q.png)
+
+- 打开解压好的文件夹
+- 完成
+
+![image.png](https://i.loli.net/2021/03/08/a1BnomAVqwvtZRy.png)
 
 ## 原理
 
 这并不是通过什么神奇的操作实现的。这个 course 系统用的编辑器 CKEditor 使用了 Flash 来实现无刷新上传文件，这在当年也算是主流的操作。
 
-然而，大人，时代变了。现在用 XHRHttpRequest 和 fetch API 也可以做到无刷新上传文件了。
+然而，大人，时代变了。现在用 XMLHttpRequest 和 fetch API 也可以做到无刷新上传文件了。
 
 所以这个插件的原理其实就是：
 
