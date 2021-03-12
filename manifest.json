@@ -12,7 +12,10 @@
   ],
   "content_scripts": [
         {
-            "matches": ["*://course.xmu.edu.cn/meol/common/hw/student/write.jsp*"],
+            "matches": [
+                "*://course.xmu.edu.cn/meol/common/hw/student/write.jsp*",
+                "*://course.xmu.edu.cn/meol/jpk/course/layout/newpage/index.jsp*"
+            ],
             "js": ["upload.js"],
             "css": ["upload.css"],
             "run_at": "document_idle"
