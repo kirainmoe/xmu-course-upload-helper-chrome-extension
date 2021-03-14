@@ -119,6 +119,25 @@
     text-align: right;
 }
 
+.uploader-toast {
+    padding: 10px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s all linear;
+    background: #fff;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+}
+
+.uploader-toast svg {
+    margin-right: 8px;
+}
+
+.uploader-toast svg path {
+    fill:rgb(24, 144, 255);
+}
+
 .uploading {
     background: #bae7ff;
 }
@@ -129,4 +148,8 @@
 
 .failed {
     background: #ff4d4f;
+}
+
+.move-up {
+    top: -30%;
 }
