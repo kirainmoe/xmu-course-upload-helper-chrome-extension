@@ -1,6 +1,6 @@
 # 厦大 course 文件上传助手
 
-用于在不使用 Flash 的情况下，上传文件到 course.xmu.edu.cn 的 Chrome 拓展。
+用于在不使用 Flash 的情况下，上传文件到 course.xmu.edu.cn 的 Chrome 拓展。目前支持 Google Chrome / 新版 Microsoft Edge 和 Firefox.
 
 - [厦大 course 文件上传助手](#厦大-course-文件上传助手)
   - [这是什么？](#这是什么)
@@ -76,6 +76,10 @@
 
 ![image.png](https://i.loli.net/2021/03/08/a1BnomAVqwvtZRy.png)
 
+### 在 Mozilla Firefox 上使用
+
+[charlieJ107 维护的 Firefox 版本](https://github.com/charlieJ107/xmu-course-upload-helper-extension/releases/tag/v1.0.3)
+
 ## 原理
 
 这并不是通过什么神奇的操作实现的。这个 course 系统用的编辑器 CKEditor 使用了 Flash 来实现无刷新上传文件，这在当年也算是主流的操作。
@@ -92,4 +96,8 @@
 
 ## 兼容性
 
-理论上所有 Chromium 内核的浏览器都可以兼容。
+理论上所有 Chromium 内核的浏览器和 Firefox 都可以兼容。
+
+## Licence
+
+MIT
