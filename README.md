@@ -3,12 +3,19 @@
 用于在不使用 Flash 的情况下，上传文件到 course.xmu.edu.cn 的 Chrome 拓展。目前支持 Google Chrome / 新版 Microsoft Edge 和 Firefox.
 
 - [厦大 course 文件上传助手](#厦大-course-文件上传助手)
+  - [(重要) 关于插件无法使用的解决方案](#重要-关于插件无法使用的解决方案)
   - [这是什么？](#这是什么)
   - [使用方法](#使用方法)
     - [在 Google Chrome 上使用](#在-google-chrome-上使用)
     - [在 Microsoft Edge 上使用](#在-microsoft-edge-上使用)
+    - [在 Mozilla Firefox 上使用](#在-mozilla-firefox-上使用)
   - [原理](#原理)
   - [兼容性](#兼容性)
+  - [Licence](#licence)
+
+## (重要) 关于插件无法使用的解决方案
+
+由于 course 更换域名 （由 course.xmu.edu.cn 更换为 course2.xmu.edu.cn），会导致插件无法正常挂载与使用。请参考下文更新最新版插件即可继续使用，参见 [#2](https://github.com/kirainmoe/xmu-course-upload-helper-chrome-extension/issues/2).
 
 ## 这是什么？
 
