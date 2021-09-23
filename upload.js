@@ -3,7 +3,7 @@
  * 重写 course.xmu.edu.cn 提交作业页面中的上传逻辑，将基于 Flash 上传文件方案替换为基于 fetch() 的上传方案
  * 
  * @author Yume Akiyama <kirainmoe@gmail.com>
- * @version 1.0.3
+ * @version 1.0.4
  */
 
 // 计算文件大小
@@ -130,7 +130,7 @@ const pluginBootstrap = () => {
 
             setState(i, 'uploading', '上传中');
 
-            await fetch("http://course.xmu.edu.cn/meol/servlet/SerUpload", {
+            await fetch("/meol/servlet/SerUpload", {
                 method: "POST",
                 headers: {
                     'X-Requested-With': 'ShockwaveFlash/29.0.0.171'
@@ -143,7 +143,7 @@ const pluginBootstrap = () => {
                     setState(i, 'success', '已上传');
                     response.push({
                         filename: input.files[i].name,
-                        address:`http://course.xmu.edu.cn/meol/${res}`
+                        address:`/meol/${res}`
                     });
                 })
                 .catch(err => {
