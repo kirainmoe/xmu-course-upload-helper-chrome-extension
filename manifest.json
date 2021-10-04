@@ -19,7 +19,7 @@
             "matches": [
                 "*://course.xmu.edu.cn/meol/common/hw/student/write.jsp*",
                 "*://course.xmu.edu.cn/meol/jpk/course/layout/newpage/index.jsp*",
-                "*://course2.xmu.edu.cn/meol/jpk/course/layout/newpage/index.jsp*",
+                "*://course2.xmu.edu.cn/meol/common/hw/student/write.jsp*",
                 "*://course2.xmu.edu.cn/meol/jpk/course/layout/newpage/index.jsp*"
             ],
             "js": ["upload.js"],
